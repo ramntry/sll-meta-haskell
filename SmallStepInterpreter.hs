@@ -2,6 +2,7 @@ module SmallStepInterpreter (int) where
 
 import Data
 import DataUtil
+import Examples.Examples
 
 int :: Program -> Expr -> Expr
 int p e = until isValue (intStep p) e

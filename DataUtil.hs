@@ -5,7 +5,7 @@ import Data.Maybe
 import Data.List
 
 isValue :: Expr -> Bool
-isValue (Ctr _ args) = and $ map isValue args 
+isValue (Ctr _ args) = and $ map isValue args
 isValue _ = False
 
 -- "factory" for simple vars

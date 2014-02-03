@@ -17,3 +17,9 @@ progTree = loadProgram "Examples/tree.sll"
 
 progList :: Program
 progList = loadProgram "Examples/list.sll"
+
+callByValueTest :: Program
+callByValueTest = loadProgram "Examples/callByValueTest.sll"
+
+counters :: Program
+counters = loadProgram "Examples/counters.sll"
