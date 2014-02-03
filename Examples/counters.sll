@@ -1,0 +1,9 @@
+gAdd(Z(), rhs) = rhs;
+gAdd(S(lhs), rhs) = S(gAdd(lhs, rhs));
+
+gMul(Z(), rhs) = Z();
+gMul(S(lhs), rhs) = gAdd(gMul(lhs, rhs), rhs);
+
+fSecond(x, y) = y;
+
+fMakeTetra(x) = Tetra(x, x, x, x);

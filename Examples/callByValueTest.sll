@@ -1,0 +1,2 @@
+fTest(x, y) = y;
+fForever(x) = fForever(x);
