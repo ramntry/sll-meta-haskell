@@ -6,6 +6,7 @@ import Data.List
 
 isValue :: Expr -> Bool
 isValue (Ctr _ args) = and $ map isValue args
+isValue (Atom _) = True
 isValue _ = False
 
 -- "factory" for simple vars
